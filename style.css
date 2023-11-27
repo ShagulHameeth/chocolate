@@ -1,0 +1,92 @@
+.img{
+    background-image: url("Images/chocolate9.jpg");
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0px;
+    height: 700px;
+}
+#text1{
+    color:white;
+    letter-spacing: 8px;
+    font-family: sans-serif;
+    padding-top: 170px;
+    text-align: center;
+}
+.sec{
+    height: fit-content;  
+}
+#para1,#text2,.sec,.sec1{
+    background-color: #F1EFEF;
+    color: black;
+}
+.img1{
+    background-image: url("Images/chocolate.jpg");
+    background-size: cover;
+    margin: 0px;
+    height: 600px;
+    background-attachment: fixed;
+}
+
+.img2{
+    background-image: url("Images/chocolate2.jpg");
+    background-size: cover;
+    margin: 0px;
+    height: 600px;
+    background-attachment: fixed;
+}
+
+.img3{
+    background-image: url("Images/chocolate1.jpg");
+    background-size: cover;
+    margin: 0px;
+    height: 600px;
+    background-attachment: fixed;
+}
+.sec1{
+    height: 400px;
+    
+}
+#choki13{
+    margin-left: 30%;
+}
+#text3{
+    margin-top: 150px;
+    text-align: justify;
+}
+#text4
+{
+    color:white;
+    letter-spacing: 8px;
+    font-family: monospace;
+    font-size: larger;
+    margin-top: 40px;
+    text-align: center;
+}
+#text5{
+    color:white;
+    letter-spacing: 8px;
+    font-family: sans-serif;
+    /* padding-top: 170px; */
+    text-align: center;
+}
+
+/* --------------------------------------mobile----------------------------------------------------- */
+@media screen and (max-width:725px) 
+{
+   #a3,#a2{
+    display: none;
+   } 
+} 
+
+
+
+
+
+
+
+
+
+
+
+
