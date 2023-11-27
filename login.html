@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <style>
+        #a1{
+            color: white;
+        }
+        #a1:hover{
+            color: rgb(243, 146, 146);
+        }
+    </style>
+</head>
+<body style="background-image: url(Images/chocolate3.jpg); background-size: cover;">
+    <div class="container">
+        <div class="text-center my-5">
+            <h2 class="text-light">LOGIN</h2>
+        </div>
+        <div class="row justify-content-center my-5" >
+            <div class="col-lg-6">
+                <form action="">
+                    <div class="form-floating my-5">
+                        <input type="text" class="form-control " id="name" placeholder="e.g.Shagul" required>
+                        <label for="name" class="form-label">Name</label> 
+                    </div>
+                    <div class="form-floating my-5">
+                        <input type="password" class="form-control" id="psw" required>
+                        <label for="psw" class="form-label">Password</label> 
+                    </div>
+                   <a href="index.html"> <button type="button" class="btn btn-secondary my-5" >Cancel</button></a>
+                    <a href="index.html"><button type="submit" class="btn btn-primary mx-5 my-5">Login</button></a>
+                </form>
+                <a id="a1" href="register.html" class="text-decoration-none"><h3>Click For New User</h3></a>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

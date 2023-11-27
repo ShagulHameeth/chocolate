@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/all.min.js"></script>
+    <style>
+        #a1{
+            color: white;
+        }
+        #a1:hover{
+            color: rgb(247, 162, 162);
+        }
+        #a2{
+            color: white;
+            /* margin-left: 700px; */
+        }
+        #a2:hover{
+            background-color: rgba(255, 255, 255,.4); 
+            color: whitesmoke;
+        }
+        #a3{
+          color: white;
+        }
+        #a3:hover{
+            color: rgb(247, 162, 162);
+        }
+        @font-face {
+            font-family:quicksand ;
+            src: url(fonts/quicksand/Quicksand-Bold.otf);
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid w-100">
+        <div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light position-fixed" style="background-color: #884A39; z-index: 1;">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navigation">
+                    <ul class="navbar-nav ">
+                      <li class="nav-item">
+                        <a id="a1" class="nav-link " href="index.html">HOME</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a id="a1" class="nav-link" href="#about">ABOUT</a>
+                      </li> -->
+                      <li class="nav-item">
+                        <a id="a1" class="nav-link" href="shop.html">SHOP</a>
+                      </li>
+                      <!-- <li class="nav-item">
+                        <a id="a1" class="nav-link" href="#contact">CONTACT</a>
+                      </li> -->
+                    </ul>
+                  </div>
+                  <div class="me-5">
+                    <a href="#" class="me-5"><i id="a2" class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="me-5"><i id="a2" class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="me-5"><i id="a2" class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="me-5"><i id="a2" class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <a href="login.html"><button id="a3" class="btn border border-white">SIGN-IN</button></a>
+                </div>
+            </nav>
+        </div>
+
+    </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate.jpg" alt="food" class="card-img-top rounded">
+                    <div class="card-body ">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Milk Chocolate</p>
+                        <p class="card-text fw-bold">&#8377 <span>456</span></p> 
+                        <!-- <img src="icons/rating.png" alt="" class="img-fluid"> -->
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki1">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki1">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Milk Chocolate</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">456</span> 
+                                <span>400</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-end" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate1.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Dark Chocolate</p>
+                        <p class="card-text fw-bold">&#8377 <span>350</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki2">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki2">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate1.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Dark Chocolate</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">350</span> 
+                                <span>300</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center " style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate2.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Cola</p>
+                        <p class="card-text fw-bold">&#8377 <span>250</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki3">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki3">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate2.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Cola</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">250</span> 
+                                <span>220</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center " style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate3.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Volco Ball</p>
+                        <p class="card-text fw-bold">&#8377 <span>500</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki4">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki4">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate3.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Volco Ball</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">500</span> 
+                                <span>480</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate4.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Five Star</p>
+                        <p class="card-text fw-bold">&#8377 <span>100</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki5">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki5">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate4.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Five Star</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">100</span> 
+                                <span>80</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate5.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Cake</p>
+                        <p class="card-text fw-bold">&#8377 <span>80</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki6">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki6">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate5.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Cake</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">80</span> 
+                                <span>68</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center " style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate6.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Gift</p>
+                        <p class="card-text fw-bold">&#8377 <span>150</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki7">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki7">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate6.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Gift</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">150</span> 
+                                <span>125</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center " style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate14.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Muffles</p>
+                        <p class="card-text fw-bold">&#8377 <span>120</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki9">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki9">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate14.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Muffles</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">120</span> 
+                                <span>100</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate8.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Box</p>
+                        <p class="card-text fw-bold">&#8377 <span>400</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki10">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki10">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate8.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Box</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">400</span> 
+                                <span>380</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate9.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Chocolate Tamed Ball</p>
+                        <p class="card-text fw-bold">&#8377 <span>100</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki10">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki10">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate9.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Chocolate Tamed Ball</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">100</span> 
+                                <span>80</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center " style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate10.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            Dark Chocolate Bar</p>
+                        <p class="card-text fw-bold">&#8377 <span>120</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki11">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki11">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate10.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    Dark Chocolate Bar </p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">120</span> 
+                                <span>90</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-center" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 my-4">
+                <div class="card shadow  mb-5 bg-body rounded" style="width:300px;">
+                    <img src="Images/chocolate15.jpg" alt="food" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text" style="font-family: quicksand; font-size: large;">
+                            White Chocolate</p>
+                        <p class="card-text fw-bold">&#8377 <span>300</span></p> 
+                        <button type="button" class="btn btn-warning" data-bs-toggle="offcanvas" data-bs-target="#choki12">Add to Cart</button>
+                        <div class="offcanvas offcanvas-end" id="choki12">
+                            <div class="offcanvas-header" style="background-color: #884A39;">
+                                <h3 class="offcanvas-title text-white" >
+                                    CART
+                                </h3>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                            </div>
+                            <div class="offcanvas-body  ">
+                                <img src="Images/chocolate15.jpg" alt="pic" class="img-fluid mt-5">
+                                <p class="card-text mt-5" style="font-family: quicksand; font-size: large;">
+                                    White Chocolate</p>
+                                <p class="card-text fw-bold">&#8377 <span style="text-decoration: line-through;">300</span> 
+                                <span>250</span></p>
+                                <button type="button" id="a1" class="btn d-flex justify-content-cente" style="background-color: #884A39;">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+             </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
